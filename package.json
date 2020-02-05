@@ -1,0 +1,28 @@
+{
+  "name": "11ty-array-sort-filter",
+  "description": "Sorting an array using Nunjucks filters.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-array-sort-filter/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "axios": "^0.19.2",
+    "lodash.map": "^4.6.0",
+    "lodash.pick": "^4.4.0"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-array-sort-filter#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-array-sort-filter.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

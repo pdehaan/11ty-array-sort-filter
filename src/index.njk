@@ -1,0 +1,17 @@
+---
+title: Sorting an array using Nunjucks filters
+---
+
+<h1>{{ hibp.length }} breaches</h1>
+
+<h2>Example 1: Default sort order of breaches, use custom `keys` filter to return subset of properties</h2>
+<pre><code>
+{% raw %}{{ hibp | batch(3) | first | keys(["Name", "AddedDate"]) | dump(2) }}{% endraw %}
+{{ hibp | batch(3) | first | keys(["Name", "AddedDate"]) | dump(2) }}
+</code></pre>
+
+<h2>Example 2: Custom sort order of breaches using custom `sortOn` filter</h2>
+<pre><code>
+{% raw %}{{ hibp | sortOn("AddedDate") | reverse | batch(3) | first | keys(["Name", "AddedDate"]) | dump(2) }}{% endraw %}
+{{ hibp | sortOn("AddedDate") | reverse | batch(3) | first | keys(["Name", "AddedDate"]) | dump(2) }}
+</code></pre>
